@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: scroll;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, a::before, a::after, a:visited {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "AveriaBold";
+  src: url("../fonts/AveriaSerifLibre-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AveriaRegular";
+  src: url("../fonts/AveriaSerifLibre-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PlusJakartaRegular";
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+}
+.display-4 {
+  font-family: "AveriaBold", "Times New Roman", Times, serif;
+  letter-spacing: -0.6;
+  line-height: 110%;
+  color: #181818;
+}
+.display-4 span {
+  font-family: "AveriaRegular", "Times New Roman", Times, serif;
+}
+
+.h5 {
+  font-family: "PlusJakartaRegular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 170%;
+  color: #181818;
+}
+
+p {
+  color: #4E4E4E;
+}
+
+body {
+  background-color: #FFFBEF;
+}
+
+.greenButton {
+  background-color: #00BAC1;
+  color: #181818;
+  font-family: "AveriaBold", "Times New Roman", Times, serif;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.125rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px #181818;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}

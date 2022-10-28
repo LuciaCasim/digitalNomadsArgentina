@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: scroll;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a, a::before, a::after, a:visited {
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+@font-face {  
+    font-family: 'AveriaBold';
+    src: url('../fonts/AveriaSerifLibre-Bold.ttf') format("truetype");
+}
+
+@font-face {  
+    font-family: 'AveriaRegular';
+    src: url('../fonts/AveriaSerifLibre-Regular.ttf') format("truetype");
+}
+
+@font-face {  
+    font-family: 'PlusJakartaRegular';
+    src: url('../fonts/PlusJakartaSans-Regular.woff2') format("woff2");
+}
+
+
+.display-4 {
+    font-family: 'AveriaBold', 'Times New Roman', Times, serif;
+    letter-spacing: -0.6;
+    line-height: 110%;
+    color: $black;
+
+    span {
+        font-family: 'AveriaRegular', 'Times New Roman', Times, serif;
+    }
+}
+
+.h5 {
+    font-family:'PlusJakartaRegular', 'Arial', sans-serif ;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 170%;
+    color: $black;
+}
+
+p {
+    color: $dark-gray;
+}
