@@ -14,23 +14,45 @@
 }
 
 
-.display-4 {
+.h1 {
     font-family: 'AveriaBold', 'Times New Roman', Times, serif;
     letter-spacing: -0.6;
     line-height: 110%;
     color: $black;
+
+    font-size: 3.75rem;
+    
+    @media (max-width: map-get($grid-breakpoints, xl)) {
+        font-size: 3rem;
+     }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        font-size: 2.375rem;
+     }
+
+     
+
+    
+        
+    // font-size: clamp(2.375rem, -0.875rem + 8.333vw, 3.75rem);
+
 
     span {
         font-family: 'AveriaRegular', 'Times New Roman', Times, serif;
     }
 }
 
-.h5 {
+p {
     font-family:'PlusJakartaRegular', 'Arial', sans-serif ;
     font-weight: normal;
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
     line-height: 170%;
     color: $black;
+    font-size: 1.125rem;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        font-size: 1rem;
+      }
 }
 
 p {

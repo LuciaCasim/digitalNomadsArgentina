@@ -1,5 +1,36 @@
-#home {
+.home {
     height: 100vh;
     display: flex;
-    align-items: center;
-}
+    align-items: center;   
+
+    &__hero {
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            justify-content: center;
+            text-align: center;
+          }
+
+          @media (max-width: map-get($grid-breakpoints, sm)) {
+            justify-content: center;
+            text-align: left;
+          }
+
+    &-image {
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: auto;
+
+            @media (max-width: map-get($grid-breakpoints, lg)) and (min-width: map-get($grid-breakpoints, md)){
+                 width: 80%;
+                 height: auto;
+              }
+        }
+    }   
+    
+    }
+
+
+    }
+    
+

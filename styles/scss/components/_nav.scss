@@ -1,0 +1,84 @@
+.navbar {
+  background-color: $cream;
+
+  padding: 0.7rem 0;
+
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    padding: 1rem 0;
+  }
+
+  
+  border-bottom: 0px solid $black;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+       transition: all 1s ease;
+
+  
+  &-toggler {
+
+    background-color: $green;
+    border-radius: 10px;
+    border: 2px solid $black;
+    padding: 8px;
+
+    &:focus,
+    &:active,
+    &-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+    &-icon {
+      background-image: url("../../img/toggler.svg");
+      
+    }
+
+    &:hover {
+      background: $green;
+      transform: none;
+      transform: none;
+      &::before {
+        transform: translate3d(5px, 5px, -1em);
+      }
+    }
+
+    &:active {
+      background: $light-green;
+      transform: translate(5px, 5px);
+      &::before {
+        transform: translate3d(0px, 0px, -1px);
+      }
+    }
+  }
+
+}
+
+.nav-link {
+    color: $black;
+    font-family: 'AveriaBold', 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+    margin: 0.5rem;
+
+}
+
+.navbar-border {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 2px solid $black;
+  -webkit-transition: all 1s ease;
+         -moz-transition: all 1s ease;
+           -o-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+              transition: all 1s ease;
+}
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
