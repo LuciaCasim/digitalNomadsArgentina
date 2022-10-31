@@ -20,13 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
             }
             last_scroll_top = scroll_top;
 
-            // if (window.scrollY != (0,0)){
-            //     el_autohide.classList.add('navbar-border');
-                        
-            //   } else {
-            //     el_autohide.classList.remove('navbar-border');
-            //   }
-
               console.log(window.scrollY)
       }); 
       // window.addEventListener

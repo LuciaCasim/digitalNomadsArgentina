@@ -2,3 +2,8 @@ body {
     background-color: $cream;
 }
 
+.container {
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        padding: 0px 20px;
+     }
+}
