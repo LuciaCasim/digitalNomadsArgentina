@@ -1,0 +1,17 @@
+.whyArgentina {
+    margin-top: 7.5rem;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        margin-top: 4rem;
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    
+}

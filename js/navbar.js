@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
             }
             last_scroll_top = scroll_top;
 
-              console.log(window.scrollY)
       }); 
       // window.addEventListener
 

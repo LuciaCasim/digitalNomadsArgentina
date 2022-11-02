@@ -18,7 +18,7 @@
                 height: auto;
 
                 @media (max-width: map-get($grid-breakpoints, lg)) and (min-width: map-get($grid-breakpoints, sm)){
-                    width: 80%;
+                    width: 90%;
                     height: auto;
                 }
             }
