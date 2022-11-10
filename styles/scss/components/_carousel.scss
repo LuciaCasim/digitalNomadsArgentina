@@ -1,9 +1,9 @@
 .carousel {
 
+
     &-inner {
-        
-        @media (min-width: map-get($grid-breakpoints, md)) {
-            padding-bottom: 5.125rem;
+        @media (min-width: map-get($grid-breakpoints, 767px)) {
+            padding-bottom: 3rem;
           }
 
           @media (min-width: map-get($grid-breakpoints, lg)) {

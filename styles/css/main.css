@@ -297,9 +297,9 @@ button {
   opacity: 1 !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: ) {
   .carousel-inner {
-    padding-bottom: 5.125rem;
+    padding-bottom: 3rem;
   }
 }
 @media (min-width: 992px) {
@@ -529,6 +529,7 @@ button {
 
 .ready {
   margin-top: 7.5rem;
+  margin-bottom: 5rem;
   background-color: #181818;
   display: flex;
   align-items: center;
@@ -682,7 +683,7 @@ button {
   }
 }
 .costs__title {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 992px) {
   .costs__title {
@@ -724,7 +725,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(-5deg);
+  transform: rotate(1deg);
 }
 .costs .card-body {
   display: flex;
