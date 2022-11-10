@@ -1,4 +1,4 @@
-.whyArgentina {
+.recommended {
     padding-top: 4.5rem;
     margin-top: 3rem;
 
@@ -25,5 +25,33 @@
             margin-bottom: 2rem;
         }
     }
-   
+
+    .carousel__image {
+        @media (max-width: map-get($grid-breakpoints, xl)) {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .carousel__control-prev {
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            left: 15%;
+          }
+
+        left: 22%;
+    }
+
+    .carousel__control-next {
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            right: 15%;
+          }
+
+        right: 22%;
+    }
 }

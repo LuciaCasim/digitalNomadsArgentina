@@ -1,0 +1,77 @@
+.benefits {
+    padding-top: 4.5rem;
+    margin-top: 3rem;
+
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+        padding-top: 3rem;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__form{
+        border-radius: 1rem;
+        border: 2px solid $black;
+        display: flex;
+        height: auto;
+        padding: 1rem 0;
+        overflow-y: hidden;
+
+        div {
+        
+            height: 40vh;
+
+            @media (min-width: map-get($grid-breakpoints, md)) {
+                height: 400px;
+            }
+
+            @media (min-width: map-get($grid-breakpoints, lg)) {
+                height: 500px;
+            }
+
+        }
+    }
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+       
+            img {
+                width: 80%;
+                height: auto;
+                display: flex;
+
+                @media (min-width: map-get($grid-breakpoints, md)) {
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    transform: translate(0, 50%);
+                    left: -15%;
+                    bottom: 50%;
+                    @media (max-width: map-get($grid-breakpoints, lg)) {
+                        left: -20%;
+                    }
+            }
+        }
+
+       
+       
+    }
+}

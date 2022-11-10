@@ -5,10 +5,26 @@
         @media (min-width: map-get($grid-breakpoints, md)) {
             padding-bottom: 5.125rem;
           }
+
+          @media (min-width: map-get($grid-breakpoints, lg)) {
+            padding-bottom: 6.5rem;
+          }
+    }
+
+    &__controls {
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            transform: scale(0.7);
+          }
     }
 
 
     &__control-prev, &__control-next {
+
+      display: none;
+          @media (min-width: map-get($grid-breakpoints, md)) {
+            display: flex;
+          }
+
         transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background-color 150ms cubic-bezier(0, 0, 0.58, 1);
         background-color: $green;
         padding: 0.2rem;
@@ -18,7 +34,6 @@
         height: 1.75rem;
         padding: 0.45rem;
         opacity: 1;
-        display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
@@ -32,10 +47,7 @@
             background: $light-green;
 
           }
-
-          @media (max-width: map-get($grid-breakpoints, md)) {
-            display: none;
-          }
+        
   
     }
 
@@ -99,7 +111,7 @@
 
     &__text {
         @media (max-width: map-get($grid-breakpoints, md)) {
-           margin: 2rem 0 3rem 0;
+           margin: 2rem 0 4rem 0;
            padding: 0 1.5rem;
            
           }

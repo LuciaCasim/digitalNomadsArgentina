@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">.
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles\css\main.css">
 
     <title>Digital Nomads Argentina</title>
   </head>
   <body>
-    <nav class="autohide navbar fixed-top navbar-expand-lg">
-        <div class="container">
+    <nav class="autohide navbar fixed-top navbar-expand-lg" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+        <div class="container" >
             <a class="navbar-brand" href="#">
               <img src="img\brand.svg" alt="Digital Nomads Argentina Logo" class="d-none d-xl-block">
               <img src="img\brand_mobile.svg" alt="Digital Nomads Argentina Logo" class="d-block d-xl-none">             
@@ -25,16 +26,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex align-items-end align-items-lg-center my-5 my-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link menu-item" href="#whyArgentina">Por qué Argentina</a>
+                    <a class="nav-link menu-item normal-item" href="#whyArgentina">Why Argentina?</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link menu-item" href="#recommended">Recomendados</a>
+                    <a class="nav-link menu-item normal-item" href="#recommended">Recommended</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link menu-item" href="#costs">Costos</a>
+                    <a class="nav-link menu-item normal-item" href="#costs">Costs</a>
                   </li>  
                   <li class="nav-item">
-                    <a class="nav-link" href="#benefits"><button class="greenButton">Beneficios</button></a>
+                    <a class="nav-link" href="#benefits"><button class="greenButton">Benefits</button></a>
                   </li>  
                   <li class="nav-item">
                     <a class="nav-link" href="#faq"><button class="whiteButton">FAQ</button></a>
@@ -44,95 +45,104 @@
         </div>
         <div class="navbar-border d-flex align-self-end"></div>
     </nav>
-    <section class="container home d-flex align-items-center" id="home">
-        <div class="row pb-5 home__hero pt-2 mt-md-5 mt-lg-0">
-            <div class="col-md-6 col-lg-5 home__hero-text mt-5 mt-md-0 order-2 order-md-1 d-flex align-items-center justify-content-between">
-              <div>
-                <h1 class="h1">Argentina: <br><span>tu nueva oficina</span></h1>
-                <p class="">Argentina es el mejor destino del mundo para vivir y trabajar. Si sos un nómade digital y estás buscando tu próxima aventura, tenemos beneficios a tu medida para que vivas una experiencia asombrosa.</p>
-                <button class="greenButton mt-3">Conocer los beneficios</button>
-              </div>          
-            </div>
-            <div class="col-md-6 offset-lg-1 home__hero-image d-flex align-items-center justify-content-center order-1 order-md-2">      
-                <img class="mt-5 mt-md-0" src="img\home.svg" alt="illustration of a boy carrying his computer in a wheelbarrow">
-            </div>
-        </div>
+    <section class="home d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row home__hero pt-2 mt-md-5 mt-lg-0">
+          <div class="col-md-6 col-lg-5 home__hero-text mt-5 mt-md-0 order-2 order-md-1 d-flex align-items-center justify-content-between">
+            <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-once="true">
+              <h1 class="h1">Argentina: <br><span>your new office</span></h1>
+              <p class="">Argentina is the best destination in the world to live and work. If you are a digital nomad, and you are looking for your next adventure, Argentina offers benefits tailored to your needs so that you can have amazing experiences.</p>
+              <button class="greenButton mt-3">Learn more</button>
+            </div>          
+          </div>
+          <div class="col-md-6 offset-lg-1 home__hero-image d-flex align-items-center justify-content-center order-1 order-md-2" data-aos="zoom-in-left" data-aos-duration="800" data-aos-once="true">      
+              <img class="mt-5 mt-md-0" src="img\home.png" alt="illustration of a boy carrying his computer in a wheelbarrow">
+          </div>
+      </div>
+      </div>     
     </section>
 
-    <div class="container">
+    <div class="container" data-aos="flip-left" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
         <div class="row video">
-            <div class="col-12 col-md-5 d-flex video__image pb-4 pt-0 px-5 ps-md-5 pe-md-2 pe-lg-5 pt-md-4 order-2 order-md-1"><img src="img\video.svg" class="video__image-img" alt="illustration of a girl watching a video"></div>
-            <div class="col-12 col-md-7 pt-4 pb-5 pt-md-5 px-4 px-md-5 order-1 order-md-2">
-              <div class="video__container">
-                <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/Rtk5tVqjeqA?rel=0&autoplay=1&controls=0&modestbranding=1&mute=1&loop=1&playlist=Rtk5tVqjeqA" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allowfullscreen></iframe>
-              </div>
+          <div class="col-12 col-md-7 pt-4 pb-5 pt-md-5 px-4 px-md-5 order-2 order-md-1">
+            <div class="video__container">
+              <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/j5LPXG-WSho?rel=0&autoplay=1&controls=1&modestbranding=1&mute=1&loop=1&playlist=j5LPXG-WSho" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allowfullscreen></iframe>
             </div>
+          </div>
+            <div class="col-12 col-md-5 d-flex video__image px-5 px-md-0 pb-4 pt-4  pt-md-4 order-1 order-md-2">
+              <img src="img\video.svg" class="video__image-img" alt="illustration of a girl watching a video">
+            </div>
+            
         </div>
     </div>
     
 
      <section class="container whyArgentina" id="whyArgentina">
-        <h2 class="h1 text-center whyArgentina__title">Por qué Argentina</h2>
-        <div id="carouselWhyArgentina" class="carousel slide parab" data-bs-ride="carousel">
+        <h2 class="h1 text-center whyArgentina__title" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800" data-aos-once="true" id="whyArgentina__title">Why Argentina?</h2>
+
+        <div id="carouselWhyArgentina" class="carousel slide parabWhy" data-bs-ride="carousel" data-aos="fade-down"  data-aos-delay="100" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
 
             <div class="carousel-inner">
-              <div class="carousel-item active" >
+              <div class="carousel-item active" data-bs-interval="8000">
                <div class="row align-items-center">
                 <div class="col-12 col-md-5  col-xl-5 offset-xl-1 d-flex justify-content-center"><img class="carousel__image" src="img\whyArg_01.svg" alt=""></div>
                 <div class="col-12 col-md-7 col-xl-5 px-md-5 carousel__text">
-                    <h3 class="h2">Conveniente</h3>
-                    <p class="p-small">En la actualidad Argentina es uno de los países más convenientes para los nómades digitales. La relación entre el costo de vida y la calidad de las experiencias que ofrece, lo ha convertido en uno de los destinos que más creció durante 2022 como opción para vivir y trabajar.</p>
+                    <h3 class="h2">Convenient</h3>
+                    <p class="p-small">Currently, Argentina is one of the most convenient countries for digital nomads. The relation between the cost of living and the quality of the experiences it offers has made it one of the destinations with the highest growth in 2022 as an option to live and work.</p>
                 </div>
                </div>
               </div>
 
-              <div class="carousel-item" >
+              <div class="carousel-item" data-bs-interval="8000">
                 <div class="row align-items-center">
                  <div class="col-12 col-md-5  col-xl-5 offset-xl-1 d-flex justify-content-center"><img class="carousel__image" src="img\whyArg_02.svg" alt=""></div>
                  <div class="col-12 col-md-7 col-xl-5 px-md-5 carousel__text">
-                     <h3 class="h2">Conectada</h3>
-                     <p class="p-small">En los grandes centros urbanos de Argentina, como Buenos Aires, Mendoza, Bariloche, Córdoba o Salta, la conexión a internet es buena y estable. Teniendo en cuenta que es uno de los aspectos que más valoran los nómades digitales, las posibilidades de trabajar con un paisaje de encanto de fondo está al alcance de la mano. </p>
+                     <h3 class="h2">Connected</h3>
+                     <p class="p-small">In the large urban centres of Argentina, such as Buenos Aires, Mendoza, Bariloche, Córdoba, or Salta, the internet connection is good and stable, which is one of the conditions that digital nomads value the most. The possibility of working with an enchanting landscape in the background is at your fingerprints. </p>
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" >
+               <div class="carousel-item" data-bs-interval="8000">
                 <div class="row align-items-center">
                  <div class="col-12 col-md-5  col-xl-5 offset-xl-1 d-flex justify-content-center"><img class="carousel__image" src="img\whyArg_03.svg" alt=""></div>
                  <div class="col-12 col-md-7 col-xl-5 px-md-5 carousel__text">
-                     <h3 class="h2">Divertida</h3>
-                     <p class="p-small">Argentina es un país vibrante por su vida nocturna, por su cultura y su vivacidad inagotables, por sus vinos de alta calidad a precios imbatibles, por su naturaleza impactante y su ecléctica gastronomía. Un valor agregado que los turistas que conocen Argentina no pueden dejar de mencionar: la calidez y amabilidad de sus habitantes. </p>
+                     <h3 class="h2">Fun</h3>
+                     <p class="p-small">Argentina is a vibrant country for its nightlife, endless culture and liveliness, high-quality wines at unbeatable prices, stunning nature, and wide-ranging gastronomy. What's more, there's an added value that every tourist who has ever visited Argentina mentions: people's warmth and friendliness.</p>
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item">
+               <div class="carousel-item" data-bs-interval="8000">
                 <div class="row align-items-center">
                  <div class="col-12 col-md-5  col-xl-5 offset-xl-1 d-flex justify-content-center"><img class="carousel__image" src="img\whyArg_04.svg" alt=""></div>
                  <div class="col-12 col-md-7 col-xl-5 px-md-5 carousel__text">
                      <h3 class="h2">Natural</h3>
-                     <p class="p-small">Desde las cataratas más espectaculares de América hasta el majestuoso glaciar Perito Moreno, desde las junglas del norte hasta la Antártida, desde el delta y los esteros del este hasta los desiertos andinos del norte, desde una megalópolis como Buenos Aires hasta pequeños poblados perdidos en la Patagonia.  </p>
+                     <p class="p-small">From the most breath-taking waterfalls in America to the majestic Perito Moreno Glacier… From the jungles of the north to Antarctica… From the delta and estuaries of the east to the Andean deserts of the north… From a megalopolis like Buenos Aires to small hidden towns in Patagonia.</p>
                  </div>
                 </div>
                </div>
               </div>
 
-              <div class="carousel-indicators top">
-                <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <div class="carousel__controls">
+                <div class="carousel-indicators top">
+                  <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+  
+                <button class="carousel__control-prev top" type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+  
+                <button class="carousel__control-next top" type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-
-              <button class="carousel__control-prev top" type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel__control-next top" type="button" data-bs-target="#carouselWhyArgentina" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              
 
               
             </div>
@@ -141,308 +151,375 @@
           </div>      
     </section>
 
-    <!-- 
-    <div class="container">
-        <div class="col">
-            <div class="row">
-                <p class="h2">¿Listo para venir a Argentina?</p>
-                <button>Conocer los beneficios</button>
+    
+    <div class="container ready" data-aos="flip-left" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+                <p class="h1 ready__title">Are you ready to visit Argentina?</p>
+                <button class="whiteButton hoverScaleButton">Sign up for the benefits</button>
+                <img src="img\shape_01.svg" class="ready__image-1" alt="A green square">
+                <img src="img\shape_02.svg" class="ready__image-2" alt="A purple circle">
+                <img src="img\shape_03.svg" class="ready__image-3" alt="A red triangle">
+                <img src="img\shape_04.svg" class="ready__image-4" alt="A yellow star">
             </div>
-        </div>
     </div>
+   
+     
+    <section class="container recommended" id="recommended">
+        <h2 class="h1 text-center recommended__title" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800" data-aos-once="true" id="recommended__title">Recommended Experiences</h2>
+        <div id="carouselReco" class="carousel slide parabReco" data-bs-ride="carousel" data-aos="fade-down"  data-aos-delay="100" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+            <div class="carousel-inner">  
 
-    <section class="container" id="recommended">
-        <h2 class="h1">Recomendados</h2>
-        <div id="carouselReco" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-              <div class="carousel-item active" data-bs-interval="5000">
-               <div class="row">
-                <div class="col-sm-6"><img class="img-fluid" src="img\reco_01.png" alt=""></div>
-                <div class="col-sm-6">
-                    <h3 class="h2">Disfrutar de la noche porteña: teatro y pizza en Calle Corrientes.</h3>
-                    <p>Buenos Aires es conocida como “la ciudad que nunca duerme” y las noches porteñas resultan memorables para cualquiera que la experimente: es divertida, con una oferta muy amplia y, lo más importante, muy segura.</p>
-                    <button>Conocer más</button>
+              <div class="carousel-item active" data-bs-interval="7000">
+               <div class="row align-items-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_01.png" alt=""></div>
+                <div class="col-12 col-md-6 carousel__text">
+                    <h3 class="h2">Enjoying Buenos Aires nightlife: Theatre and pizza on Corrientes Street.</h3>
+                    <p class="p-small">Buenos Aires is known as the city that never sleeps, and its nightlife results memorable for anyone who experiences it: it is fun, with a very wide and diverse offer and, most importantly, very safe. </p>
+                    <a href="https://argentina.travel/en/news/que-hacer-en-72-horas-por-buenos-aires-la-capital-de-argentina" target="_blank"><button class="greenButton">Learn More</button></a>
                 </div>
                </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_02.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Degustar los mejores vinos en las bodegas de Mendoza.</h3>
-                     <p>El entorno de la Cordillera de los Andes. Las ciudades pintorescas. Las casonas rurales. Los alojamientos urbanos. Los hoteles cinco estrellas. Los restaurantes internacionales. La cocina de autor. Y en ese marco soñado, la oportunidad de que disfrutes la experiencia del vino.</p>
-                     <button>Conocer más</button>                  
+              <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_02.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Tasting the best wines in the wineries in Mendoza.</h3>
+                     <p class="p-small">The Andes Mountain surroundings, quaint cities, rural houses, urban accommodation, five-star hotels, international restaurants, signature kitchen… And in that dreamy setting, the opportunity to enjoy the wine experience.</p>
+                     <a href="https://argentina.travel/en/news/dia-del-vino-como-bebida-nacional-4-bodegas-argentinas-dignas-de-record" target="_blank"><button class="greenButton">Learn More</button></a>                
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_03.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Tomar una cerveza patagónica en Bariloche.</h3>
-                     <p>La cerveza de Bariloche es considerada la más rica de Argentina por la calidad del agua de deshielo que se utiliza. Muchas cervecerías patagónicas han sido premiadas y reconocidas en el mundo entero por su excelente calidad y sabor.</p>
-                     <button>Conocer más</button>
+               <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_03.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Having a Patagonian beer in Bariloche.</h3>
+                     <p class="p-small">Bariloche beer is considered the best in Argentina due to the quality of the meltwater used in its production. Many Patagonian breweries have been awarded and recognized across the world for their excellent quality and taste.</p>
+                     <a href="https://argentina.travel/en/news/7-razones-por-las-que-el-parque-nacional-nahuel-huapi-es-considerado-una-maravilla-natural-argentina" target="_blank"><button class="greenButton">Learn More</button></a>  
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_04.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Hacer trekking en el Chaltén durante el verano.</h3>
-                     <p>Desafía las rutas del Fitz Roy. Te esperan días de descubrimiento y noches bajo las estrellas. ¡Experiencias con la mística de aventureros expedicionarios! Tus ojos no podrán creer lo que la naturaleza nos regala.</p>
-                     <button>Conocer más</button>
+               <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_04.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Going trekking in Chaltén during the summer.</h3>
+                     <p class="p-small">Take up the Fitz Roy challenge. Experience days discovering amazing places, and nights enjoying a canopy of stars. Follow the mystique of expeditionary adventurers! Your eyes will not believe what nature gives us.</p>
+                     <a href="https://argentina.travel/en/news/que-hacer-en-salta-y-el-chalten-los-dos-destinos-elegidos-entre-los-mejores-del-mundo-por-time" target="_blank"><button class="greenButton">Learn More</button></a>  
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_05.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Visitar las Cataratas del Iguazú.</h3>
-                     <p>El estruendo del agua, el canto de los pájaros y la belleza selvática te hipnotizan en este entorno único. Una de las nuevas Siete Maravillas Naturales del Mundo, declaradas Patrimonio Natural de la Humanidad, que no te podés perder.</p>
-                     <button>Conocer más</button>
+               <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_05.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Visiting the Iguazú Falls.</h3>
+                     <p class="p-small">The roar of the water, the song of the birds, and the rainforest beauty will hypnotise you in this unique environment. One of the new Seven Natural Wonders of the World, declared a Natural World Heritage Site, which you can't miss.</p>
+                     <a href="https://argentina.travel/en/news/guia-completa-para-una-escapada-al-parque-nacional-iguazu" target="_blank"><button class="greenButton">Learn More</button></a>  
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_06.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Recorrer la Quebrada de Humahuaca con una mochila al hombro.</h3>
-                     <p>La Quebrada de Humahuaca, declarada Patrimonio Cultural de la Humanidad por la UNESCO en el 2003, está ubicada al noroeste del país, en la provincia de Jujuy. ¿Su encanto? Las altas cadenas montañosas multicolores que trazan la ruta y que recibieron a sus pies pueblos que aportaron cultura, tradición e historia a la ecuación.</p>
-                     <button>Conocer más</button>
+               <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_06.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Touring around Quebrada de Humahuaca with a backpack.</h3>
+                     <p class="p-small">The Quebrada de Humahuaca, declared a Cultural Heritage Site by UNESCO in 2003, is located in the northwest of the country, in the province of Jujuy. Its charm? The high multicoloured mountain ranges tracing the routes that have welcomed at their feet peoples who have contributed culture, tradition, and history to our nation.</p>
+                     <a href="https://argentina.travel/en/news/5-pueblos-de-la-quebrada-de-humahuaca-para-conocer-en-solo-24h" target="_blank"><button class="greenButton">Learn More</button></a>  
                  </div>
                 </div>
                </div>
 
-               <div class="carousel-item" data-bs-interval="5000">
-                <div class="row">
-                 <div class="col-sm-6"><img class="img-fluid" src="img\reco_07.png" alt=""></div>
-                 <div class="col-sm-6">
-                     <h3 class="h2">Pasar un día de campo en una estancia y probar el asado.</h3>
-                     <p>¿Sabés lo que significa el asado en Argentina? Tan solo la mejor excusa para reunir allegados en una ceremonia del buen comer que consta de pasos y reglas pero, sobre todo, está guiada por el disfrute. Las estancias bonaerenses resultan un espacio ideal para vivir la experiencia completa de probar el asado hecho por las manos de verdaderos hombres de campo. </p>
-                     <button>Conocer más</button>
+               <div class="carousel-item" data-bs-interval="7000">
+                <div class="row align-items-center">
+                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center"><img class="carousel__image" src="img\reco_07.png" alt=""></div>
+                 <div class="col-12 col-md-6 carousel__text">
+                     <h3 class="h2">Spending a day in a countryside estate and trying asado.</h3>
+                     <p class="p-small">Do you know what asado means in Argentina? Just the best excuse to gather close friends in a good-food ceremony with steps and rules, and, above all, governed by enjoyment. Estates in Buenos Aires are ideal to have the complete experience of trying asado made by true country people.</p>
+                     <a href="https://argentina.travel/en/news/el-asado-guia-para-vivir-el-ritual-argentino-mas-sabroso" target="_blank"><button class="greenButton">Learn More</button></a>  
                  </div>
                 </div>
                </div>
             
               </div>
 
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselReco" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselReco" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel__controls">
+                <div class="carousel-indicators top">
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselReco" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+  
+                <button class="carousel__control-prev top" type="button" data-bs-target="#carouselReco" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+  
+                <button class="carousel__control-next top" type="button" data-bs-target="#carouselReco" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+             
+
             </div> 
     </section>
 
-    <section class="container" id="costs">
-        <h2 class="h1">Costos</h2>
-        <p class="p">Información obtenida de <a href="https://www.numbeo.com/cost-of-living/">Numbeo.</a></p>
+    
+    <section class="container costs" id="costs">
+      <div class="costs__title" data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+        <h2 class="h1 text-center">Costs</h2>
+        <p class="p text-center">Information obtained from <u><a href="https://www.numbeo.com/cost-of-living/">Numbeo.</a></u></p>
+      </div>     
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_01.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>6 USD</button>
-                  <p class="card-text">Almuerzo en un restaurante</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-01">
+                  <div class="card-button">
+                    <button class="greenButton">6 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">Lunch in a restaurant</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_02.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>1.75 USD</button>
-                  <p class="card-text">Una cerveza</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-02">
+                  <div class="card-button">
+                    <button class="greenButton">1.75 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">A pint of beer</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_03.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>1.69 USD</button>
-                  <p class="card-text">Un Capuchino</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-03">
+                  <div class="card-button">
+                    <button class="greenButton">1.69 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">A cup of cappuccino</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_04.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>0.25 USD</button>
-                  <p class="card-text">Viaje en transporte público</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-04">
+                  <div class="card-button">
+                    <button class="greenButton">0.25 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">A public transport ticket</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_05.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>22 USD</button>
-                  <p class="card-text">Internet por mes</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200" >
+                <div class="card-img card-img-05">
+                  <div class="card-button">
+                    <button class="greenButton">22 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">An Internet plan per month</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_06.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>4 USD</button>
-                  <p class="card-text">Entrada de cine</p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col">
-              <div class="card">
-                <img src="img\cost_07.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>230 USD</button>
-                  <p class="card-text">Alquiler monoambiente en la ciudad</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-06">
+                  <div class="card-button">
+                    <button class="greenButton">4 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">A cinema ticket</p>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card">
-                <img src="img\cost_08.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <button>3 USD</button>
-                  <p class="card-text">Botella de vino</p>
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-07">
+                  <div class="card-button">
+                    <button class="greenButton">230 USD</button>
+                  </div>                
+                </div> 
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">Studio flat rental in the city</p>
                 </div>
               </div>
             </div>
+
+            <div class="col">
+              <div class="card h-100" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                <div class="card-img card-img-08">
+                  <div class="card-button">
+                    <button class="greenButton">3 USD</button>
+                  </div>                
+                </div>
+                <div class="card-body">                
+                  <p class="p-small card-text text-center">Bottle of wine</p>
+                </div>
+              </div>
+            </div>
+
            
           </div>
         </div>
     </section>
 
-    <section class="container" id="benefits">
-      <h2 class="h1">Beneficios</h2>
-      <p>Si te quedas en Argentina más de 3 semanas, te regalamos una gift card con puntos equivalente a USD 200 que podrás canjear por experiencias turísticas, gastronómicas, de bienestar, entre otras. ¡Dejanos tus datos! Conocé más sobre el programa.</p>
+
+    <section class="container benefits" id="benefits">
+      <div class="benefits__title" data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+        <h2 class="h1 text-center">Benefits</h2>
+        <p class="text-center">If you stay in Argentina for more than 3 weeks, we will give you a Gift Card with points equivalent to <strong>200 USD</strong> that you can redeem for tourist, gastronomic, and wellness experiences, among others. Enter your information here!</p>
+      </div>
       
-      <div class="row">
-        <div class="col-md-6">
-          <iframe src="" frameborder="0">typescript form</iframe>
+      
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 offset-md-1 benefits__form order-2 order-md-1" data-aos="fade-left" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+          <div data-tf-widget="tkde0GnU" data-tf-inline-on-mobile data-tf-opacity="0" data-tf-hide-headers style="width:100%;"></div><script src="//embed.typeform.com/next/embed.js"></script>
         </div>
-        <div class="col-md-6">
-          <img src="img\benefits.png" alt="">
+        <div class="col-md-5 benefits__image order-1 order-md-2" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
+          <img src="img\benefits.svg" class="img-fluid "alt="Illustration of a man using his laptop">
         </div>
       </div>
     </section>
 
-    <section class="container" id="faq">
-      <h2 class="h1">FAQ</h2>
+
+    <section class="container faq" id="faq">
+      <h2 class="h1 text-center faq__title" data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">FAQ</h2>
 
       <div id="accordion">
 
-        
-        <div class="card">
+        <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Cómo definimos a un nómade digital?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4">What is a digital nomad?</h5> 
+              <div class="btn btn-link btn-1 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <img src="img\collapse_icon.svg" class="colapse_icon" alt="">               
+              </div>   
+            </div>
+                    
+                  
           </div>
       
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Se trata de personas con un perfil de alto capital humano, que desempeña tareas laborales de manera remota. La tendencia creciente de trabajadores que eligieron vivir su vida como nómades digitales se ha incrementado luego de la pandemia, debido a que se ha revalorizado la forma de vida que integra el trabajo y el disfrute.
+          <div id="collapseOne" class="collapse mx-2" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body p-small">
+              Digital nomads are people with a high human capital profile, who work remotely. The growing trend of workers who chose to live as digital nomads has increased after the pandemic upon reconsidering and valuing the lifestyle that integrates work and enjoyment.
             </div>
           </div>
         </div>
 
        
-        <div class="card">
+        <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Necesito una Visa para quedarme en Argentina?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4">Do I need a visa to stay in Argentina?</h5>
+              <div class="btn btn-link btn-2 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="img\collapse_icon.svg" alt="">               
+              </div>
+            </div>
           </div>
       
           <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Una vez que has arribado a Argentina podrás permanecer durante 90 días corridos sin necesidad de realizar ningún trámite. Si has cumplido tu estadía de tres meses y deseás quedarte más tiempo, podrás tramitar una visa especial para Nómades Digitales en el <a href=" https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html">sitio web del Ministerio del Interior de la Nación.</a>
+            <div class="card-body p-small">
+              You can stay in Argentina for 90 calendar days upon your arrival without doing any paperwork. If your three-month stay is finished, and you wish to stay longer, you can apply for a special visa for Digital Nomads on the  <u><a href=" https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html">Ministry of the Interior website.</a></u>
             </div>
           </div>
         </div>
 
         
-        <div class="card">
+        <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Debo pagar impuestos en Argentina?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4">Do I have to pay taxes in Argentina?</h5>
+              <div class="btn btn-link btn-3 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="img\collapse_icon.svg" alt="">               
+              </div>
+            </div>
           </div>
       
           <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              No. Los nómadas digitales que trabajan a distancia no están sujetos a los impuestos locales siempre que el trabajo que realicen no sea para Argentina.
+            <div class="card-body p-small">
+              No. Digital nomads working remotely are not subject to paying local taxes as long as they do not do any work for Argentina.
             </div>
           </div>
         </div>
 
          
-         <div class="card">
+         <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Qué tipo de trabajos puedo realizar mientras permanezco en Argentina?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4">What kind of jobs can I do while staying in Argentina?</h5>
+              <div class="btn btn-link btn-4 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="img\collapse_icon.svg" alt="">               
+              </div>
+            </div>
           </div>
       
           <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Cualquier trabajo que pueda realizar a distancia para el mercado de su país u otro, siempre que este trabajo no sea para el mercado argentino y/o para un empleador argentino, es decir: que esté empleado o realice un trabajo a través de la tecnología de la comunicación para una empresa o su propia empresa que no esté registrada en Argentina y no realice trabajos o preste servicios a empleadores (personas jurídicas o físicas) en Argentina.
-              Si desea trabajar localmente tiene que solicitar el permiso de trabajo y residencia en el país. 
+            <div class="card-body p-small">
+              Any job you can perform remotely for your country's market or another market, provided that it is not for the Argentinian market and/or for an Argentinian employer. That is to say, you are employed by or perform a job through the technology of communication for, a company, or your own company, not registered in Argentina and not performing any work for or providing services to employers (legal or natural persons) in Argentina.
+              If you want to work locally, you have to apply for a work and residence permit in the country.              
             </div>
           </div>
         </div>
 
          
-         <div class="card">
+         <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Qué idioma se habla en Argentina?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4">What language is spoken in Argentina?</h5>
+              <div class="btn btn-link btn-5 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="img\collapse_icon.svg" alt="">               
+              </div>
+            </div>
           </div>
       
           <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              El idioma oficial de Argentina es el español, que se habla en todo el territorio nacional pero en las grandes ciudades se habla inglés con mucha fluidez.
+            <div class="card-body p-small">
+              The official language of Argentina is Spanish, which is spoken throughout the national territory. English is also spoken very fluently in the major cities.
             </div>
           </div>
         </div>
 
         
-         <div class="card">
+         <div class="card" data-aos="flip-down" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">¿Dónde puedo encontrar información y recomendaciones sobre qué puedo hacer en Argentina?</h5>
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"> >               
-            </button>
+            <div class="faq__question d-flex w-100 align-items-center justify-content-between">
+              <h5 class="mb-0 ms-4 d-flex">Where can I find information and recommendations about things to do in Argentina?</h5>
+              <div class="btn btn-link btn-6 d-flex h-100" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="img\collapse_icon.svg" alt="">               
+              </div>
+            </div>
           </div>
       
           <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              En el <a href="https://www.argentina.travel">sitio oficial de Visit Argentina.</a>
+            <div class="card-body p-small">
+              On the <u><a href="https://www.argentina.travel">official website of Visit Argentina.</a></u>
             </div>
           </div>
         </div>
@@ -452,37 +529,63 @@
     </section> 
 
 
-    <section class="container-fluid">
+
+    <section class="container-fluid footer" data-aos="slide-up" data-aos-duration="800" data-aos-once="true" data-aos-offset="200">
       <footer>
-        <div class="row">
-          <div class="col">
-            <img src="img\icono_DigitalNomads.png" alt="">
-            <div class="row">
-              <ul>
-                <li>Por qué Argentina</li>
-                <li>Recomendados</li>
-                <li>Costos</li>
-                <li>Beneficios</li>
-                <li>FAQ</li>
-              </ul>
+        <div class="row footer__black">
+          <div class="col align-items-center justify-content-center">
+
+            <div class="footer__nomadsLogo d-flex justify-content-center align-items-center">
+              <img src="img\logo_DigitalNomads.svg" class="d-flex align-self-center" alt="Digital Nomads Logo">
             </div>
-            <div class="row"><button>Aplicá a la Visa para Nómades Digitales</button> 
-              <ul>
-                <li><a href="https://www.instagram.com/visitargentina/"><img src="img\icon_instagram.svg" alt="instagram icon"></a></li>
-                <li><a href="https://www.facebook.com/visitarg/"><img src="img\icon_facebook.svg" alt="facebook icon"></a></li>
-                <li><a href="https://twitter.com/visitargentina"><img src="img\icon_twitter.svg" alt="twitter icon"></a></li>
-                <li><a href="https://www.tiktok.com/@visitargentina_"><img src="img\icon_tiktok.svg" alt="tiktok icon"></a></li>
-                <li><a href="https://www.youtube.com/channel/UC9w7aOZMl9a1l9boy4Y-xGg"><img src="img\icon_youtube.svg" alt="youtube icon"></a></li>
-              </ul>
+            <div class="footer__nomadsLogoSeparation">
+
             </div>
+            
+            <div class="d-flex justify-content-center">
+              <div class="footer__links d-flex justify-content-center">
+                <ul >
+                  <li><a href="#whyArgentina">Why Argentina?</a></li>
+                  <li><a href="#recommended">Recommended</a></li>
+                  <li><a href="#costs">Costs</a></li>
+                  <li><a href="#benefits">Benefits</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </div>              
+            </div>
+            
+
+            <div class="d-flex justify-content-center align-items-center footer__buttonAndSocial">
+
+              <button class="greenButton hoverScaleButton"><a href="https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html" target="_blank">Apply for a Digital Nomad Visa</a>
+              </button>
+
+              <div class="footer__buttonAndSocialSeparation">
+              </div>
+
+              <div class="footer__socialMedia">
+                <ul>
+                  <li><a href="https://www.instagram.com/visitargentina/" target="_blank"><img src="img\icon_instagram.svg" alt="instagram icon"></a></li>
+                  <li><a href="https://www.facebook.com/visitarg/" target="_blank"><img src="img\icon_facebook.svg" alt="facebook icon"></a></li>
+                  <li><a href="https://twitter.com/visitargentina" target="_blank"><img src="img\icon_twitter.svg" alt="twitter icon"></a></li>
+                  <li><a href="https://www.tiktok.com/@visitargentina_" target="_blank"><img src="img\icon_tiktok.svg" alt="tiktok icon"></a></li>
+                  <li><a href="https://www.youtube.com/channel/UC9w7aOZMl9a1l9boy4Y-xGg" target="_blank"><img src="img\icon_youtube.svg" alt="youtube icon"></a></li>
+                </ul>
+              </div>
+
+            </div>
+
           </div>
         </div>
-        <div class="row">
-          <img src="img\logo_visitArg.svg" alt="Visit Argentina Logo">
-          <img src="img\logo_MarcaPais.svg" alt="Argentina Logo">
+        <div class="row footer__gray">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img\logo_visitArg.svg" alt="Visit Argentina Logo">
+            <img src="img\logo_MarcaPais.svg" alt="Argentina Logo">
+          </div>
+          
         </div>
       </footer>
-    </section>  -->
+    </section> 
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -493,12 +596,16 @@
     src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js\navbar.js"></script>
     <script src="js\carousel.js"></script>
+    <script src="js\faq.js"></script>
+   
 
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+ 
   </body>
 </html>

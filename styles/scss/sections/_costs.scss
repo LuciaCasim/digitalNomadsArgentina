@@ -1,0 +1,138 @@
+.costs {
+    padding-top: 4.5rem;
+    margin-top: 3rem;
+
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+        padding-top: 3rem;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    
+    
+    &__title {
+        margin-bottom: 5rem;
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .greenButton {
+        cursor: auto;
+        font-size: 1.5rem;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 1.5rem;
+          }
+        
+    }
+    
+
+    .col {
+        padding: 1rem;
+    }
+
+    .card {
+        display: flex;
+        border-radius: 1rem;
+        border: 2px solid $black;
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1);
+        background-color: $white;
+
+        @media (min-width: map-get($grid-breakpoints, lg))  {
+            max-height: 360px;
+          }
+
+          @media (min-width: map-get($grid-breakpoints, xl))  {
+            max-height: auto;
+          }
+
+        @function randomNum($min, $max) {
+            $rand: random();
+            $randomNum: $min + floor($rand * (($max - $min) + 1));
+          
+            @return $randomNum;
+          }
+          
+        &:hover {
+            transform: rotate(#{randomNum(-10, 10)}deg) ;
+        }
+        
+        &-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-text {
+            padding: 1.5rem 0.8rem;
+            margin-top: 1rem;
+
+            @media (max-width: map-get($grid-breakpoints, lg)) {
+                font-size: 1.125rem;
+              }
+        }
+
+        &-button {
+            position: absolute;
+            transform: translate(0, 50%);
+            bottom: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        
+
+        &-img {
+            position: relative;
+            border-radius: 1rem 1rem 0 0 ;
+            border-bottom: 2px solid $black;
+            height: 16rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            &-01 {
+                background-image: url("../../img/cost_01.png");
+            } 
+            
+            &-02 {
+                background-image: url("../../img/cost_02.png");
+            }
+            
+            &-03 {
+                background-image: url("../../img/cost_03.png");
+            }
+            
+            &-04 {
+                background-image: url("../../img/cost_04.png");
+            }
+
+            &-05 {
+                background-image: url("../../img/cost_05.png");
+            }
+
+            &-06 {
+                background-image: url("../../img/cost_06.png");
+            }
+
+            &-07 {
+                background-image: url("../../img/cost_07.png");
+            }
+
+            &-08 {
+                background-image: url("../../img/cost_08.png");
+            }
+        }
+    }
+}

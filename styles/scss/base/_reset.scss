@@ -9,6 +9,7 @@
 body {
     overflow: scroll;
     position: relative;
+    overflow-x: hidden;
 }
 
 html {
@@ -16,6 +17,12 @@ html {
 }
 
 
-a, a::before, a::after, a:visited {
-    text-decoration: none;
+a, a::before, a::after, a:visited, a:hover {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }

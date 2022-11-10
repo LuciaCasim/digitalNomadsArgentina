@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 8rem;
+
+    &__black {
+        background-color: $black;
+        padding: 4.875rem 0;
+    }
+
+    &__links {
+        color: $white;
+        font-size: 1.25rem;
+
+        margin-bottom: 1rem;
+
+        @media (min-width: map-get($grid-breakpoints, sm_plus)) {
+            font-size: 1.125rem;
+            margin-bottom: 3rem;
+         }
+        
+        
+
+        li {
+            padding: 1rem;
+            text-align: center;
+
+            &:hover {
+                color: $green;
+            }
+
+            @media (min-width: map-get($grid-breakpoints, sm_plus)) {
+                    display: inline;
+            }
+        }
+ 
+    }
+
+    &__nomadsLogo {
+        margin-bottom: 3rem;
+
+        @media (max-width: map-get($grid-breakpoints, sm_plus)) {
+            margin-bottom: 0;
+    }
+
+        img {
+            @media (max-width: map-get($grid-breakpoints, sm_plus)) {
+                width: 70%;
+                height: auto;
+        }
+        }
+
+        &Separation{
+            height: 1px;
+            width: 80vw;
+            background-color: $green;
+            margin: 2.875rem auto 1.875rem auto;
+
+            @media (min-width: map-get($grid-breakpoints, sm_plus)) {
+                width: 70%;
+                height: auto;
+        }
+        }
+    }
+
+    &__buttonAndSocial {
+        flex-direction: row;
+
+        @media (max-width: map-get($grid-breakpoints, sm_plus)) {
+            flex-direction: column;
+        }
+
+        &Separation {
+            @media (max-width: map-get($grid-breakpoints, sm_plus)) {
+                display: none;
+             }
+            
+            
+            margin: 0 1.7rem 0 1.9rem;
+            width: 1px;
+            height: 3rem;
+            background-color: $green;
+        }
+    }
+
+    &__socialMedia {
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            @media (max-width: map-get($grid-breakpoints, sm_plus)) {
+                margin-top: 2rem;
+             }
+        }
+
+        li {
+            padding: 0.2rem;
+            display: inline;
+
+            
+
+            img{
+                margin: 0;
+
+                &:hover {
+                    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1);
+                    transform: scale(1.2);
+                }
+            }
+            
+        }
+    }
+
+    
+
+    &__gray {
+        background-color: $light-gray;
+        padding: 2rem 0;
+
+        img {
+            padding: 0 3.75rem;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+
+            div {
+                flex-direction: column;               
+                }
+            
+            img {
+                width: 70%;
+                padding: 1.5625rem 3.75rem;
+           
+            }    
+        }
+        
+    }
+}

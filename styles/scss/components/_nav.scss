@@ -82,3 +82,7 @@
   transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
+.normal-item:hover {
+  color: $green !important;
+  opacity: 1 !important;
+}
