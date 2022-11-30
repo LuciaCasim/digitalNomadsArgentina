@@ -714,18 +714,13 @@ button {
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1);
   background-color: #FFFDF5;
 }
-@media (min-width: 992px) {
-  .costs .card {
-    max-height: 360px;
-  }
-}
 @media (min-width: 1200px) {
   .costs .card {
     max-height: auto;
   }
 }
 .costs .card:hover {
-  transform: rotate(1deg);
+  transform: rotate(-9deg);
 }
 .costs .card-body {
   display: flex;
