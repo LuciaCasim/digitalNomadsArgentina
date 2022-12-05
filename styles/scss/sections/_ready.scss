@@ -1,6 +1,7 @@
 .ready {
     margin-top: 7.5rem;
     margin-bottom: 5rem;
+    transform-style: preserve-3d;
 
     @media (max-width: map-get($grid-breakpoints, lg)) {
         margin-top: 5rem;

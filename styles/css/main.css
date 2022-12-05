@@ -171,6 +171,9 @@ button {
   transform: translate3d(0, 0, -1px);
 }
 
+.hoverScaleButton {
+  position: relative;
+}
 .hoverScaleButton:hover {
   transform: translate(0px, 0px) scale(1.08) !important;
 }
@@ -530,6 +533,7 @@ button {
 .ready {
   margin-top: 7.5rem;
   margin-bottom: 5rem;
+  transform-style: preserve-3d;
   background-color: #181818;
   display: flex;
   align-items: center;
@@ -720,7 +724,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(-9deg);
+  transform: rotate(9deg);
 }
 .costs .card-body {
   display: flex;
@@ -743,6 +747,7 @@ button {
   display: flex;
   width: 100%;
   justify-content: center;
+  transform-style: preserve-3d;
 }
 .costs .card-img {
   position: relative;
@@ -903,6 +908,7 @@ button {
   border-radius: 0.75rem;
   background-color: transparent;
   border: 0px;
+  transform-style: preserve-3d;
 }
 .faq .card-header {
   background-color: #FFFDF5;

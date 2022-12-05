@@ -55,6 +55,8 @@ button {
 
 .hoverScaleButton {
 
+  position: relative;
+
   &:hover {
     transform: translate(0px, 0px) scale(1.08) !important;
 

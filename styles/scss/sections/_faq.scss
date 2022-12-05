@@ -50,6 +50,8 @@
         background-color: transparent;
         border: 0px;
 
+        transform-style: preserve-3d;
+
         &-header {
             background-color: $white;
             display: flex;
