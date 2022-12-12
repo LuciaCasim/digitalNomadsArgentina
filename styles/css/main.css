@@ -502,7 +502,7 @@ button {
 
 .whyArgentina {
   padding-top: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .whyArgentina {
@@ -617,7 +617,7 @@ button {
 
 .recommended {
   padding-top: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .recommended {
@@ -672,7 +672,7 @@ button {
 
 .costs {
   padding-top: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .costs {
@@ -724,7 +724,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(10deg);
+  transform: rotate(-6deg);
 }
 .costs .card-body {
   display: flex;
@@ -785,7 +785,7 @@ button {
 
 .benefits {
   padding-top: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .benefits {
@@ -862,7 +862,7 @@ button {
 .faq {
   z-index: 1;
   padding-top: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .faq {
