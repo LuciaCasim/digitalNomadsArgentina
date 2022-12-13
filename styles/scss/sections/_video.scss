@@ -2,6 +2,8 @@
     background-color: $light-soft-pink;
     border-radius: 32px;
 
+    margin-top: 4rem;
+
     @media (max-width: map-get($grid-breakpoints, lg)) {
         margin-top: 5rem;
     }
@@ -9,6 +11,8 @@
     @media (max-width: map-get($grid-breakpoints, sm)) {
         margin-top: 4rem;
     }
+
+    
     
     &__col {
 

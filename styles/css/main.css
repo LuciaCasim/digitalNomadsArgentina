@@ -307,8 +307,11 @@ button {
 }
 @media (min-width: 992px) {
   .carousel-inner {
-    padding-bottom: 6.5rem;
+    padding-bottom: 5rem;
   }
+}
+.carousel-item {
+  padding-bottom: 0.5rem;
 }
 @media (max-width: 768px) {
   .carousel__controls {
@@ -393,7 +396,6 @@ button {
 }
 @media (max-width: 768px) {
   .carousel__text {
-    margin: 2rem 0 4rem 0;
     padding: 0 1.5rem;
   }
 }
@@ -437,6 +439,7 @@ button {
 .video {
   background-color: rgba(255, 194, 214, 0.5);
   border-radius: 32px;
+  margin-top: 4rem;
 }
 @media (max-width: 992px) {
   .video {
@@ -730,7 +733,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(0deg);
+  transform: rotate(10deg);
 }
 .costs .card-body {
   display: flex;

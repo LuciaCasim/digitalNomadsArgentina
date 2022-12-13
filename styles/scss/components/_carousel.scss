@@ -2,13 +2,17 @@
 
 
     &-inner {
-        @media (min-width: map-get($grid-breakpoints, 767px)) {
+        @media (min-width: map-get($grid-breakpoints, 768px)) {
             padding-bottom: 3rem;
           }
 
           @media (min-width: map-get($grid-breakpoints, lg)) {
-            padding-bottom: 6.5rem;
+            padding-bottom: 5rem;
           }
+    }
+
+    &-item{
+      padding-bottom: 0.5rem;
     }
 
     &__controls {
@@ -117,8 +121,11 @@
     }
 
     &__text {
+
+      
+
         @media (max-width: map-get($grid-breakpoints, md)) {
-           margin: 2rem 0 4rem 0;
+          //  margin: 2rem 0 4rem 0;
            padding: 0 1.5rem;
            
           }
