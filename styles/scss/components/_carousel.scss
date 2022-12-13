@@ -15,6 +15,13 @@
         @media (max-width: map-get($grid-breakpoints, md)) {
             transform: scale(0.7);
           }
+
+          @media (min-width: map-get($grid-breakpoints, md)) {
+            height: 30px;
+            margin-top: 2rem;
+          }
+          
+
     }
 
 

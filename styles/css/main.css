@@ -315,6 +315,12 @@ button {
     transform: scale(0.7);
   }
 }
+@media (min-width: 768px) {
+  .carousel__controls {
+    height: 30px;
+    margin-top: 2rem;
+  }
+}
 .carousel__control-prev, .carousel__control-next {
   display: none;
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background-color 150ms cubic-bezier(0, 0, 0.58, 1);
@@ -410,7 +416,7 @@ button {
 }
 @media (min-width: 992px) {
   .home {
-    height: 90vh;
+    height: 85vh;
   }
 }
 .home__hero-image {
@@ -502,7 +508,7 @@ button {
 
 .whyArgentina {
   padding-top: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 992px) {
   .whyArgentina {
@@ -617,7 +623,7 @@ button {
 
 .recommended {
   padding-top: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 992px) {
   .recommended {
@@ -672,7 +678,7 @@ button {
 
 .costs {
   padding-top: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 992px) {
   .costs {
@@ -724,7 +730,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(-6deg);
+  transform: rotate(0deg);
 }
 .costs .card-body {
   display: flex;
@@ -785,7 +791,7 @@ button {
 
 .benefits {
   padding-top: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 992px) {
   .benefits {
@@ -862,7 +868,7 @@ button {
 .faq {
   z-index: 1;
   padding-top: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 992px) {
   .faq {
