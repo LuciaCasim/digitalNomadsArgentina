@@ -733,7 +733,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(10deg);
+  transform: rotate(8deg);
 }
 .costs .card-body {
   display: flex;
