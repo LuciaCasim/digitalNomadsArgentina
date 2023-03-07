@@ -39,26 +39,32 @@ ul {
   font-family: "PlusJakartaRegular";
   src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
 }
+.home__header {
+  font-family: "AveriaBold", "Times New Roman", Times, serif;
+  letter-spacing: -0.6;
+  line-height: 110%;
+  color: #181818;
+  font-size: 3.815rem;
+}
+@media (max-width: 992px) {
+  .home__header {
+    font-size: 3rem;
+  }
+}
+.home__header span {
+  font-family: "AveriaRegular", "Times New Roman", Times, serif;
+}
+
 .h1 {
   font-family: "AveriaBold", "Times New Roman", Times, serif;
   letter-spacing: -0.6;
   line-height: 110%;
   color: #181818;
-  font-size: 3.75rem;
-}
-@media (max-width: 1200px) {
-  .h1 {
-    font-size: 3rem;
-  }
+  font-size: 3rem;
 }
 @media (max-width: 992px) {
   .h1 {
-    font-size: 2.75rem;
-  }
-}
-@media (max-width: 576px) {
-  .h1 {
-    font-size: 2.375rem;
+    font-size: 2.44rem;
   }
 }
 .h1 span {
@@ -66,45 +72,40 @@ ul {
 }
 
 .h2 {
-  font-size: 2.375rem;
+  font-size: 1.95rem;
   font-family: "AveriaRegular", "Times New Roman", Times, serif;
   color: #181818;
 }
 @media (max-width: 992px) {
   .h2 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  .h2 {
-    font-size: 1.7rem;
+    font-size: 1.563rem;
   }
 }
 
 .p-small {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: "PlusJakartaRegular", "Arial", sans-serif;
   font-weight: normal;
-  line-height: 170%;
+  line-height: 160%;
   color: #181818;
 }
 @media (max-width: 992px) {
   .p-small {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 p {
   font-family: "PlusJakartaRegular", "Arial", sans-serif;
   font-weight: normal;
-  line-height: 170%;
+  line-height: 160%;
   color: #181818;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #4E4E4E;
 }
 @media (max-width: 992px) {
   p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
@@ -679,6 +680,12 @@ button {
   }
 }
 
+@media (min-width: 992px) {
+  .carousel__text {
+    padding-right: 2rem !important;
+  }
+}
+
 .costs {
   padding-top: 4.5rem;
   margin-top: 5rem;
@@ -733,7 +740,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(8deg);
+  transform: rotate(-1deg);
 }
 .costs .card-body {
   display: flex;
@@ -810,10 +817,14 @@ button {
 }
 .benefits__title {
   margin-bottom: 5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 992px) {
   .benefits__title {
     margin-bottom: 3rem;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {

@@ -13,26 +13,37 @@
     src: url('../fonts/PlusJakartaSans-Regular.woff2') format("woff2");
 }
 
+.home__header {
+    font-family: 'AveriaBold', 'Times New Roman', Times, serif;
+    letter-spacing: -0.6;
+    line-height: 110%;
+    color: $black; 
+    font-size: 3.815rem;
+
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+        font-size: 3rem;
+     }
+
+     span {
+        font-family: 'AveriaRegular', 'Times New Roman', Times, serif;
+    }
+}
 
 .h1 {
     font-family: 'AveriaBold', 'Times New Roman', Times, serif;
     letter-spacing: -0.6;
     line-height: 110%;
-    color: $black;
+    color: $black; 
+    font-size: 3rem;
 
-    font-size: 3.75rem;
-    
-    @media (max-width: map-get($grid-breakpoints, xl)) {
-        font-size: 3rem;
-     }
 
      @media (max-width: map-get($grid-breakpoints, lg)) {
-        font-size: 2.75rem;
+        font-size: 2.44rem;
      }
 
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-        font-size: 2.375rem;
-     }
+    // @media (max-width: map-get($grid-breakpoints, sm)) {
+    //     font-size: 2.375rem;
+    //  }
 
 
     span {
@@ -41,44 +52,44 @@
 }
 
 .h2 {
-    font-size: 2.375rem;
+    font-size: 1.95rem;
     font-family: 'AveriaRegular', 'Times New Roman', Times, serif;
     color: $black;
 
     @media (max-width: map-get($grid-breakpoints, lg)) {
-        font-size: 2rem;
+        font-size: 1.563rem;
       }
 
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-        font-size: 1.7rem;
-      }
+    // @media (max-width: map-get($grid-breakpoints, sm)) {
+    //     font-size: 1.7rem;
+    //   }
 
     
 }
 
 .p-small {
-    font-size: 1.125rem;
+    font-size: 1rem;
 
     @media (max-width: map-get($grid-breakpoints, lg)) {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 
     font-family:'PlusJakartaRegular', 'Arial', sans-serif ;
     font-weight: normal;
-    line-height: 170%;
+    line-height: 160%;
     color: $black;
 }
 
 p {
     font-family:'PlusJakartaRegular', 'Arial', sans-serif ;
     font-weight: normal;
-    line-height: 170%;
+    line-height: 160%;
     color: $black;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: $dark-gray;
 
     @media (max-width: map-get($grid-breakpoints, lg)) {
-        font-size: 1.125rem;
+        font-size: 1rem;
       }
 }
 
