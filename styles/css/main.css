@@ -740,7 +740,7 @@ button {
   }
 }
 .costs .card:hover {
-  transform: rotate(-2deg);
+  transform: rotate(6deg);
 }
 .costs .card-body {
   display: flex;
@@ -1140,4 +1140,4 @@ button {
     width: 70%;
     padding: 1.5625rem 3.75rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */
